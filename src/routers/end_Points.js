@@ -54,6 +54,9 @@ function signIn(req,res){
 let test = (req,res,next)=>{
     next('Internal Error!!')
 }
+router.get('/', (req, res) => {
+    res.status(200).send('Welcome to Social Server');
+});
 router.get('/badLink', test)
 router.post('/signin', basic(Users) ,signIn)
 router.post('/signUp', signUp)
