@@ -58,7 +58,7 @@ router.get('/badLink', test)
 router.post('/signin', basic(Users) ,signIn)
 router.post('/signUp', signUp)
 router.get('/read', bearer(Users),asl("read"),readHandler)
-router.put('/update/:id', bearer(Users),asl("update"),updateHandler)
+router.put('/update', bearer(Users),asl("update"),updateHandler)
 router.put('/create', bearer(Users),asl("write"),createHandler)
 router.delete('/delete',bearer(Users),asl("delete"), deleteHandler)
 

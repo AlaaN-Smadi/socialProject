@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const { Sequelize, DataTypes } = require('sequelize');
 const UsersSchema = require('../src/models/user_model');
-const sequelize = new Sequelize('postgres://maram997@localhost:5432/testdb');
+const sequelize = new Sequelize('postgres://ffgqxyhx:Ah1vctI8ocTRZBGSbTqsahuqVT5GLuyB@chunee.db.elephantsql.com/ffgqxyhx');
 const Users = UsersSchema(sequelize, DataTypes);
 beforeAll(async () => {
     await sequelize.sync();
