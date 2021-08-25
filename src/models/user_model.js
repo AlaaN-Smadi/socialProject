@@ -26,7 +26,6 @@ const users = (sequelize, DataTypes) => {
                 const acl={
                     visitor:['read'],
                     user:['read', 'create'],
-                    
                     admin:['read', 'create', 'update', 'delete']
                 };
                 return acl[this.role]
