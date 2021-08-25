@@ -62,6 +62,6 @@ router.put('/update', bearer(Users),asl("update"),updateHandler)
 router.put('/create', bearer(Users),asl("write"),createHandler)
 router.delete('/delete',bearer(Users),asl("delete"), deleteHandler)
 
-
+   
 
 module.exports = router
